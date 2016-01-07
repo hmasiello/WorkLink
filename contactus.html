@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="WorkLink Website">
+
+		<title>WorkLink</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	
+	<body>
+		<div class="container">
+		<header class="clearfix">
+				<div class="logo">
+					<a href="index.html"><img src="images/WorkLinkVector.svg" alt="WorkLink logo"></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="services.html">Services</a>
+							<ul>
+								<li><a href="#">Consultation</a></li>
+								<li><a href="#">Recruitment</a></li>
+								<li><a href="#">On-Site Assistance</a></li>
+								<li><a href="#">Volunteer/Internship</a></li>
+							</ul>
+						</li>
+						<li><a href="success.html">Success Stories</a></li>
+						<li><a href="contactus.html">Contact Us</a></li>
+					</ul>
+				</nav>
+		</header>
+
+
+		<section>
+			<div class="mainphoto">
+				<img src="images/contactus.jpg" alt="Teens holding iPad and iPhone">
+			</div>
+
+			<div class="form"> 
+				<form action="/my-handling-form-page" method="post">
+				    <div>
+				        <label for="name">Name:</label><br>
+				        <input type="text" id="name" placeholder="First and last name"/>
+				    </div>
+				    <div>
+				        <label for="mail">Email:</label><br>
+				        <input type="email" id="mail" placeholder="Your email address"/>
+				    </div>
+				    <div>
+				        <label for="msg">Message:</label><br>
+				        <textarea id="msg" placeholder="Your message"></textarea>
+				    </div>
+				    <div> 
+				    	<label for="antispam">What is 2+2?</label><br>
+				    	<input type="number" id="antispam" placeholder="Answer" />
+					<div>
+	        			<button type="submit" class="button">Send message</button>
+	    			</div>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<div class="sitemap"><a href="index.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="services.html">Services</a> | <a href="contactus.html">Contact Us</a></div>
+			<address>785 Market Street<br>
+			Suite 670<br>
+			San Francisco, CA 94103<br>
+			415-979-9520
+			</address>
+		</footer>
+	</div>
+
+		<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+  		<script src="js/main.js"></script>
+	
+	</body>
+
+</html>

@@ -1,0 +1,282 @@
+/*
+Project Name: WorkLink Website 
+Client: WorkLink
+Author: Hyun Masiello 
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/*
+colors: 
+dark teal - #0A6774
+light teal - #57A7B2
+light grey - #C0C0C0
+dark grey - #383838
+red - #E83425
+*/
+
+body {
+  padding: 0px 15px;
+}
+
+header {
+  padding-top: 50px;
+}
+
+a {
+  color:#0A6774;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #57A7B2 ;
+}
+
+nav {
+  font-family: Roboto Condensed;
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding: 70px 0px 70px 0px;
+}
+
+nav ul {
+  list-style-type: none;
+  position: relative;
+}
+
+nav ul ul {
+    font-weight: 200;
+}
+
+nav ul li {
+  padding: 15px 0px 25px 20px;
+}
+
+nav ul ul li {
+  background: white;
+  display: block;
+  padding: 15px 25px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  color: #0A6774;
+  font-family: Arimo;
+  font-size: 1.625rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+p {
+  color: #383838;
+  font-family: Arimo;
+  font-size: 1.375rem;
+  line-height: 1.25;
+}
+
+input, textarea{
+  color: #0A6774;
+  font-family: Roboto Condensed;
+  font-size: 1.125rem;
+  min-width: 400px;
+  padding: 10px;
+  width: 60%;
+}
+
+textarea {
+  min-height: 300px;
+  resize: vertical;
+}
+
+footer {
+  border-top: 2px solid #C0C0C0;
+  margin-top: 70px;
+  padding: 30px 0px 60px 0px;
+  text-align: center;
+}
+
+address {
+  color: #383838;
+  font-family: Roboto Condensed; 
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.logo {
+  padding-top: 20px;
+}
+
+.sitemap {
+  color: #E83425;
+  font-family: Roboto Condensed;
+  font-size: 1.375rem;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.mainphoto {
+  border-top: 2px solid #C0C0C0;
+  padding: 60px 0px;
+}
+
+.paragraphlist {
+  color: #383838;
+  display: inline-block;
+  font-family: Arimo;
+  font-size: 1.375rem;
+  line-height: 1.25;
+  list-style-type: disc; 
+  margin-left: 80px;
+  padding: 30px 0px;  
+}
+
+.meet_img {
+  margin: auto;
+  padding-top: 70px;
+  width: 85%;
+  -webkit-filter: grayscale(100%);  /* For Webkit browsers */    
+  filter: grayscale(100%); 
+  -webkit-transition: all .6s ease; /* Transition for Webkit browsers */
+  transition: all .6s ease;
+}
+
+.meet_img:hover { 
+  transform: scale(1.025);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);      
+}
+
+.meet:nth-of-type(1) .meet_img {
+  margin-left: 0
+}
+
+.meet:nth-of-type(3) .meet_img {
+  margin-right: 0
+}
+
+.story img {
+  padding-right: 60px;
+}
+
+.story > div {
+  padding-bottom: 40px;
+}
+
+.form div {
+  color: #383838;
+  font-family: Roboto Condensed;
+  font-size: 1.25rem;
+  font-weight: 800;
+  line-height: 2;
+  padding: 20px 0px 20px 0px;
+}
+
+.button {
+  background-color: #0A6774;
+  border-radius: 10px;
+  color: white;
+  font-family: Roboto Condensed;
+  font-size: 1.25rem;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: left;
+}
+
+/******************************************
+/* RESPONSIVE
+/*******************************************/
+
+/* screens wider than 768px take these styles */
+@media (min-width: 768px) {
+
+  nav {
+    float: right; 
+  }
+
+  .logo {
+    float: left;
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul ul {
+    display: none;
+    margin-left: -130px;
+    padding: 30px 0px;
+    position: absolute;
+    top: 100%;
+    z-index: 2;
+  }
+
+  nav ul li:hover > ul {
+    display: inline-block;
+  }
+
+  .meet {
+    float: left;
+    width: 33.333%;
+  }
+
+  .meet_img {
+    display: block;
+  }
+
+  .story img {
+    float: left;
+    width: 30%;
+  }
+
+  .story > div {
+    float: left;
+    width: 70%;
+  }
+
+}
+
