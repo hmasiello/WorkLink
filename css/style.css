@@ -278,5 +278,9 @@ address {
     width: 70%;
   }
 
+  .hide {
+    display: none;
+  }
+
 }
 

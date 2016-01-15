@@ -1,14 +1,12 @@
 //$.ready makes sure DOM is loaded before anything happens 
 $( document ).ready(function(){
 
-
+	//CONTACT US PAGE
 	//event prevent default 
 	$('#theform').submit(function(e) {
 	  e.preventDefault();
 	
-	//CONTACT US PAGE 
-	//validate & answer to antispam 
-
+		//validate & answer to antispam 
 		//name 
 		var nameElement = $('#name');
 		var nameValue = nameElement.val();
@@ -48,25 +46,26 @@ $( document ).ready(function(){
 		//successful submit 
 		alert ('Thanks for submitting the form, someone will be in touch with you soon!')
 
+	});
 
 	//SUCCESS STORIES 
-	//slider show more show less
 
+		//slider show more show less
 		var readMore = $('.readmore a')
 		var paragraphHide = $('p.hide')
 		var readLess = $('.readless')
 
-		$('readMore').click(function() {
-			$('paragraphHide').slideDown();
-			$('readMore').hide();
+		$(readMore).click(function(e) {
+			$(paragraphHide).slideDown();
+			e.preventDefault();
+			$(readMore).hide();
 		});
 
-		$('readLess').click(function() {
-			$('paragraphHide').slideUp();
-			$('readMore').show();	
-		})
-
-	});
+		$(readLess).click(function(e) {
+			$(paragraphHide).slideUp();
+			e.preventDefault();
+			$(readMore).show();	
+		});
 
 })
 
