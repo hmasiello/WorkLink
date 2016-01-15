@@ -49,23 +49,66 @@ $( document ).ready(function(){
 	});
 
 	//SUCCESS STORIES 
-
 		//slider show more show less
-		var readMore = $('.readmore a')
-		var paragraphHide = $('p.hide')
-		var readLess = $('.readless')
 
-		$(readMore).click(function(e) {
-			$(paragraphHide).slideDown();
-			e.preventDefault();
-			$(readMore).hide();
+		//JULIO
+		$('.readmoreJulio a').click(function(e) {
+		$('p.hideJulio').slideDown();
+		e.preventDefault();
+		$('.readmoreJulio a').hide();
 		});
 
-		$(readLess).click(function(e) {
-			$(paragraphHide).slideUp();
-			e.preventDefault();
-			$(readMore).show();	
+		$('.readlessJulio').click(function(e) {
+		$('p.hideJulio').slideUp();
+		e.preventDefault();
+		$('.readlessJulio').hide();	
+		$('.readmoreJulio a').show();
 		});
+
+
+		//ANN
+		$('.readmoreAnn a').click(function(e) {
+		$('p.hideAnn').slideDown();
+		e.preventDefault();
+		$('.readmoreAnn a').hide();
+		});
+
+		$('.readlessAnn').click(function(e) {
+		$('p.hideAnn').slideUp();
+		e.preventDefault();
+		$('.readlessAnn').hide();	
+		$('.readmoreAnn a').show();
+		});
+
+		//SAM
+		$('.readmoreSam a').click(function(e) {
+		$('p.hideSam').slideDown();
+		e.preventDefault();
+		$('.readmoreSam a').hide();
+		});
+
+		$('.readlessSam').click(function(e) {
+		$('p.hideSam').slideUp();
+		e.preventDefault();
+		$('.readlessSam').hide();	
+		$('.readmoreSam a').show();
+		});
+
+		//var readMore = $('.readmore a')
+		//var paragraphHide = $('p.hide')
+		//var readLess = $('.readless')
+
+		//$(readMore).click(function(e) {
+		//$(paragraphHide).slideDown();
+		//e.preventDefault();
+		//$(this).hide();
+		//});
+
+		//$(readLess).click(function(e) {
+		//$(paragraphHide).slideUp();
+		//e.preventDefault();
+		//$(this).hide();	
+		//});
 
 })
 

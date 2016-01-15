@@ -278,7 +278,7 @@ address {
     width: 70%;
   }
 
-  .hide {
+  .hideJulio, .hideAnn, .hideSam {
     display: none;
   }
 
