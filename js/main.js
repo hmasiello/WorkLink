@@ -94,21 +94,5 @@ $( document ).ready(function(){
 		$('.readmoreSam a').show();
 		});
 
-		//var readMore = $('.readmore a')
-		//var paragraphHide = $('p.hide')
-		//var readLess = $('.readless')
-
-		//$(readMore).click(function(e) {
-		//$(paragraphHide).slideDown();
-		//e.preventDefault();
-		//$(this).hide();
-		//});
-
-		//$(readLess).click(function(e) {
-		//$(paragraphHide).slideUp();
-		//e.preventDefault();
-		//$(this).hide();	
-		//});
-
 })
 

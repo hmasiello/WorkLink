@@ -227,6 +227,11 @@ address {
   text-align: left;
 }
 
+  .hideJulio, .hideAnn, .hideSam {
+    display: none;
+  }
+
+
 /******************************************
 /* RESPONSIVE
 /*******************************************/
@@ -277,10 +282,3 @@ address {
     float: left;
     width: 70%;
   }
-
-  .hideJulio, .hideAnn, .hideSam {
-    display: none;
-  }
-
-}
-
