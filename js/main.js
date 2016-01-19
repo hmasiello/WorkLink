@@ -65,7 +65,6 @@ $( document ).ready(function(){
 		$('.readmoreJulio a').show();
 		});
 
-
 		//ANN
 		$('.readmoreAnn a').click(function(e) {
 		$('p.hideAnn').slideDown();
